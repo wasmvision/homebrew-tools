@@ -10,6 +10,9 @@ class Wasmvision < Formula
             url "https://github.com/wasmvision/wasmvision/releases/download/v#{version}/wasmvision-macos-arm64.tar.gz"
             sha256 "381fef9be68a6a6170e409e246c1ee8664f8193f698331b4212dac8bf588329a"
         end
+        on_intel do
+            odie "wasmVision homebrew installer does not currently support macOS on Intel processors."
+        end
     end
 
     def install
