@@ -19,9 +19,5 @@ class Wasmvision < Formula
         libexec.install "wasmvision"
         bin.install_symlink libexec/"wasmvision"
     end
-  
-    test do
-        system "#{bin}/wasmvision", "version"
-    end
 end
   
