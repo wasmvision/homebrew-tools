@@ -16,7 +16,7 @@ class Wasmvision < Formula
     end
 
     def install
-        libexec.install "bin/wasmvision"
+        bin.install "wasmvision"
     end
   
     test do
